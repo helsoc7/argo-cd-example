@@ -115,7 +115,7 @@ Dieser Befehl ruft die Manifeste aus dem Repository ab und führt ein kubectl ap
 7. Eigene Beispiel-Anwendung durchstarten
 Wir haben bereits ein Repository angelegt mit einer Beispielanwendung, die aus einem NestJS-Backend und einem Angular-Frontend besteht. Dieses Repository fügen wir einfach ArgoCD wieder hinzu mit folgenden Befehl:
 ```
-rgocd app create myapp --repo https://github.com/marcolindner/example-k8s-application --path ./deployment --dest-server https://kubernetes.default.svc --dest-namespace default --server 127.0.0.1:8080 --insecure
+argocd app create myapp --repo https://github.com/marcolindner/example-k8s-application --path ./deployment --dest-server https://kubernetes.default.svc --dest-namespace default --server 127.0.0.1:8080 --insecure
 ```
 Danach können wir die Anwendung synchronisieren:
 ```
